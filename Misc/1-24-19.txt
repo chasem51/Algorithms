@@ -1,0 +1,16 @@
+cplusplus.com
+
+tutorial
+basics(all)
+
+Prog Structure
+	control structure
+	functions
+Comp Data
+	everythinig but other data types
+
+Articles
+	sort by rating
+		include
+		beginner exercises
+g++ -o newname -std=c++11 name	.cpp
