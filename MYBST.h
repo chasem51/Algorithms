@@ -1,29 +1,26 @@
+// LATE DAY
+// Chase Maivald
+// U18719879
+
 #ifndef __MYBST_H__
 #define __MYBST_H__
 
 #include <vector>
 #include "BST.h"
 
-struct Pair{
-    Node* parent;
-    Node* child;
-};
-
 class MyBST : public BST
 {
     using BST::BST;
 public:
-    std::vector<Rotation> transform(MyBST target);
-    bool isParent(Node* parent, Node* child);
-    bool isLeftParent(Node* parent, Node* child);
-    bool isRightParent(Node* parent, Node* child);
-    bool isRoot(Node* rootNode);
-    bool rotateRight(Node* root, Node* pivot, Node* parent);
-    bool rotateLeft(Node* root, Node* pivot, Node* parent);
-    Node* findParentLastRightSpineBranch();
+    Node* in_order(int index);
+    Node* search(int value);
+	int getDepth(Node* node, Node* ptr, int height);
+	Node* findParent(Node* root, int value);
 
-    vector<Rotation> makeRightChain(RotationType rotType);
-    void reverse(vector<Rotation> input);
+	vector<Rotation>transform(MyBST target);
+private:
+	Node* rotateRight(Node* Q);
+	Node* rotateLeft(Node* P);
 };
 
 #endif /* __MYBST_H__*/

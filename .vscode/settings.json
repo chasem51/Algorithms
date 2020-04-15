@@ -47,7 +47,9 @@
         "bitset": "cpp",
         "ctime": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "deque": "cpp",
+        "queue": "cpp"
     },
     "git.ignoreLimitWarning": true
 }
